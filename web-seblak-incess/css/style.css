@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: #eaeaea;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    width: 100%;
+}
+.navigation{
+    padding: .3em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button#btn-hamburger,
+button#btn-close{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    right: 0;
+    
+}
+#btn-hamburger i{
+    font-size: 2rem;
+    color: #A20405;
+}
+#logo{
+    width: 11vmax;
+    cursor: none;
+}
+
+#nav.close{
+    display: none;
+    transform: translateX(50);
+}
+#nav.open{
+    transform: translateX(0);
+}
+#nav{
+    position: fixed;
+    padding: 1.5em;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 90vh;
+    background-color:#1f1f1f;
+    box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.33);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;    
+}
+#btn-close i{
+    font-size: 2rem;
+    color: #fff;
+}
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+#nav a:hover{
+    background-color: #A20405;
+}
+/* Seblak Section */
+#seblak{
+    height: 100vh;
+    background-image: url(https://jinggajilca.github.io/web-seblak-incess/images/bg-seblak.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-seblak{
+    width: 30vmax;
+    margin-left: -60px;
+}
+.seblak-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+    color: #1f1f1f;
+}
+.seblak-text h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+.seblak-text h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+.seblak-text a,
+.kontak-text a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1em 2em;
+    border-radius: 1.5em;
+    background-color: #31CF12;
+    transition: .5s;
+}
+.seblak-text a:hover,
+.kontak-text a:hover{
+    background-color: #29ac0f;
+}
+/* Menu Seblak Section */
+#menu-seblak{
+    background-image: url(https://jinggajilca.github.io/web-seblak-incess/images/bg-menu.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3em;
+}
+.deskripsi{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-deskripsi{
+    position: relative;
+    left: 60px;
+    width: 20vmax;
+}
+.deskripsi-text{
+    background-color: #FA6700;
+    border: 2px solid #fff;
+    border-radius: 2em;
+    color: #fff;
+    width: 500px;
+    padding: 3em 3em 3em 6em;
+}
+.deskripsi-text h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+}
+.deskripsi-text p{
+    font-size: 1.2rem;
+    margin-top: .5em;
+}
+.menu-title h1{
+    margin-top: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #A20405;
+}
+.menu-row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    margin-top: 1.2em;
+}
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.3em;
+    padding: 2em;
+    width: 20%;
+
+}
+.img-menu{
+    width: 13vmax;
+}
+.menu-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.menu-text h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.menu-text{
+    margin: 0;
+}
+.menu-harga{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Kartu Maroon */
+.menu-card.maroon{
+    color:#fff;
+    background-color: #A20405;
+}
+.menu-harga.maroon{
+    color: #FFFC00;
+}
+/* Kartu White */
+.menu-card.white{
+    color:#1f1f1f;
+    background-color: #fff;
+}
+.menu-harga.white{
+    color: #A20405;
+}
+
+
+/* Topping Section */
+.topping{
+    background-color: #A20405;
+    background-image: url(https://jinggajilca.github.io/web-seblak-incess/images/bg-topping.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10em;
+}
+.topping-title{
+    padding: 3em 5em;
+}
+.topping-title h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.topping-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    margin-bottom: 2em;
+}
+.topping-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+
+}
+.topping-card h1{
+    font-size: 1.3rem;
+    margin: .5rem;
+    text-align: center;
+
+}
+.topping-harga {
+    color: #FFFC00;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.topping-custom{
+    padding: 0 .7em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topping-custom h1{
+    margin-top: .2em;
+    font-weight: 500;
+}
+.topping-img{
+    height: 15vmax;
+    background-color: #760F0F;
+    border-radius: 1rem;
+    padding: .8em;
+}
+/* Minuman Section */
+.minuman{
+    height: 100vh;
+    color: #fff;
+    background-color: #A20405;
+    background-image: url("../images/web-seblak.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10em;
+    padding-top: 10em;
+}
+.minuman-img{
+    height: 40vmax;
+}
+.minuman-title h1,
+.kontak-title h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.minuman-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: rgba(118, 15, 15,.5);
+    backdrop-filter: blur(3px);
+    border-radius: 1em;
+    border: 2px solid #fff;
+    margin-top: 1em;
+    padding: 1em 2em;
+    width: 40vmax;
+}
+.minuman-text h2{
+    font-size: 1.3rem;
+}
+.minuman-harga{
+    color: #FFFC00;
+}
+
+/* Kontak Section */
+.kontak{
+    background-color: #4a0606;
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.kontak-title h1{
+    text-align: center;
+}
+
+.kontak-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding: 0 2em;
+}
+.kontak-container iframe{
+    width: 35%;
+    height: 300px;
+}
+.kontak-text {
+    padding: 0 2em;
+    font-size: 1.1rem;
+}
+.credit{
+    padding: 0 3em;
+}
+@media only screen and (max-width: 800px) {
+    .seblak-text{
+        padding: 2em;
+    }
+    .seblak-text h1{
+        font-size: 2.3em;
+    }
+    .deskripsi{
+        padding: 2em;
+    }
+    .menu-text h1{
+        font-size: 1.3rem;
+    }
+    .menu-text p{
+        font-size:1rem;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .menu-list{
+        display: none;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #nav{
+        width: 45%;
+    }
+    .seblak-text{
+        padding: 0;
+    }
+    .seblak-text h1{
+        line-height: 1em;
+        font-size: 2rem;
+    }
+    .seblak-text h3{
+        font-size: 1rem;
+    }
+    /* Seblak Section */
+    #seblak{
+        flex-direction: column;
+    }
+    .seblak-text{
+        text-align: center;
+        padding-top: 0;
+    }
+    /* Seblak Section */
+    .deskripsi{
+        padding-top: 0;
+        flex-direction: column;
+    }
+    .img-deskripsi{
+        left: 0;
+    }
+    .deskripsi-text{
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 2rem 0;
+        color: #1f1f1f;
+        width: 60vw;
+    }
+    .deskripsi-text h1{
+        font-size: 1.5rem;
+    }
+    .deskripsi-text p{ 
+        font-size: 1rem;
+    }
+    /* Menu Seblak Section */
+    #menu-seblak{
+        background-color: #FFC234;
+        background-image: none;
+    }
+    .menu-title h1{
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    .menu-row{
+        display: none;
+    }
+    .menu-list{
+        padding: 2em;
+    }
+    .menu-list-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #760F0F;
+        padding: .5em 0;
+    }
+    .menu-list-seblak h1{
+        margin-bottom: .3em;
+        color: #A20405;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .menu-list-seblak p{
+        margin: 0;
+        color: #1f1f1f;
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    .menu-list-harga{
+        font-weight: 800;
+        font-size: 1.3rem;
+        color: #A20405;
+    }
+    /* Topping Section */
+    .topping{
+        background-image: url(https://jinggajilca.github.io/web-seblak-incess/images/bg-topping-sm.png);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #A20405;
+    }
+    .topping-title h1,
+    .minuman-title h1,
+    .kontak-title h1{
+        margin: 0;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .topping-card h1,
+    .minuman-nama h2,
+    .minuman-harga h2,
+    .kontak-text p{
+        font-size: 1rem;
+    }
+    .topping-harga{
+        font-size: 1rem;
+    }
+
+    /* Minuman Section */
+    .minuman{
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        padding: 3em 0;
+    }
+    .minuman-text{
+        border: none;
+        background-color: transparent;
+    }
+    .minuman-img{
+        display: none;
+    }
+    /* Kontak Section */
+    .kontak-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .kontak-container iframe{
+        width: 85%;
+    }
+    .kontak-text a{
+        font-size: 1rem;
+        line-height: 1em;
+    }
+    .credit{
+        margin-top: 5em;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+}
